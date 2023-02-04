@@ -1,9 +1,10 @@
 import React from "react";
 
-const Card = ({ image }) => {
+const Card = ({ image, name }) => {
     return (
-       <div className="flex w-80 h-80">
+       <div className="flex flex-col w-80 h-80">
         <img src={image} alt="card" />
+        <span>{name}</span>
        </div>
     )
 }

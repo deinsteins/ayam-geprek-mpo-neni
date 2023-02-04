@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "../Button";
-import Card from "../Card";
+import products from "../../data/menu.json";
 import Wrapper from "../Wrapper";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import MenuCard from "../MenuCard";
 
 const MenuSection = () => {
     const responsive = {
@@ -37,7 +38,8 @@ const MenuSection = () => {
         <Carousel
             additionalTransfrom={0}
             arrows
-            autoPlaySpeed={0}
+            autoPlay={true}
+            autoPlaySpeed={2000}
             centerMode={false}
             className=""
             containerClass="container"
@@ -63,12 +65,11 @@ const MenuSection = () => {
             slidesToSlide={1}
             swipeable
             >
-                <div className="bg-white w-[250px] h-96">Menu 1</div>
-                <div className="bg-white w-[250px] h-96">Menu 2</div>
-                <div className="bg-white w-[250px] h-96">Menu 3</div>
-                <div className="bg-white w-[250px] h-96">Menu 4</div>
-                <div className="bg-white w-[250px] h-96">Menu 5</div>
-                <div className="bg-white w-[250px] h-96">Menu 6</div>
+              {products.list.map((product) => {
+                return (
+                  <MenuCard key={product.id} name={product.name} image={product.photo} />
+                )
+              })}
         </Carousel>
       </Wrapper>
     )

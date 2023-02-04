@@ -1,0 +1,50 @@
+{
+    "list": [
+        {
+            "id": "1",
+            "name": "Ayam Crispy",
+            "photo": "images/products/Ayam_Cripsy.png"
+        },
+        {
+            "id": "2",
+            "name": "Ayam Geprek",
+            "photo": "images/products/ayam_geprek.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Ayam Hot Lava",
+            "photo": "images/products/ayam_hot_lava.jpg"
+        },
+        {
+            "id": "4",
+            "name": "RiceBowl Spicy/Geprek",
+            "photo": "images/products/ricebowl.jpg"
+        }
+    ],
+    "list_menu": [
+        {
+            "id": "1",
+            "name": "Ayam Crispy",
+            "photo": "images/products/Ayam_Cripsy.png",
+            "price": "Rp. 13.000"
+        },
+        {
+            "id": "2",
+            "name": "Ayam Geprek",
+            "photo": "images/products/ayam_geprek.jpg",
+            "price": "Rp. 13.000"
+        },
+        {
+            "id": "3",
+            "name": "Ayam Hot Lava",
+            "photo": "images/products/ayam_hot_lava.jpg",
+            "price": "Rp. 13.000"
+        },
+        {
+            "id": "4",
+            "name": "RiceBowl Spicy/Geprek",
+            "photo": "images/products/ricebowl.jpg",
+            "price": "Rp. 13.000"
+        }
+    ]
+  }
