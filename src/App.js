@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="flex flex-col px-48 py-4 bg-[#B21600]">
+      <div className="px-4 py-2 md:px-48 md:py-4 bg-[#B21600]">
         <Hero />
       </div>
       <Content />
