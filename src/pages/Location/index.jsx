@@ -10,7 +10,7 @@ const Location = () => {
                 <Wrapper>
                     <div className="flex flex-col p-12">
                         <iframe 
-                            src="http://bit.ly/3wVr49v" 
+                            src="https://bit.ly/3wVr49v" 
                             width="100%" 
                             height="450" 
                             style={{display: "flex", margin: "auto"}} 
