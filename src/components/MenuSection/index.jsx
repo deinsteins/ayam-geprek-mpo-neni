@@ -5,8 +5,10 @@ import Wrapper from "../Wrapper";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import MenuCard from "../MenuCard";
+import { useNavigate } from "react-router-dom";
 
 const MenuSection = () => {
+  const navigate = useNavigate();
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -34,7 +36,7 @@ const MenuSection = () => {
         <h1 className="text-2xl md:text-4xl text-white font-bold">JELAJAHI</h1>
         <h1 className="text-2xl md:text-4xl text-white font-bold">MENU TERBAIK</h1>
         <h1 className="text-2xl md:text-4xl text-white font-bold">DARI KAMI</h1>
-        <Button title="Klik Disini" color="#B21600" background="white" />
+        <Button title="Klik Disini" color="#B21600" background="white" OnClick={() => navigate("/menu")} />
       </div>
       <Carousel
         additionalTransfrom={0}
